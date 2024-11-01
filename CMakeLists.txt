@@ -10,7 +10,6 @@ set ( CMAKE_CXX_EXTENSIONS        OFF )
 # Source
 set ( SOURCE_ONE_WEEKEND
   src/InOneWeekend/main.cc
-  src/InOneWeekend/ray.h
 )
 
 include_directories(src)
