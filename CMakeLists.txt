@@ -7,6 +7,9 @@ set ( CMAKE_CXX_STANDARD          11 )
 set ( CMAKE_CXX_STANDARD_REQUIRED ON )
 set ( CMAKE_CXX_EXTENSIONS        OFF )
 
+# clangd
+set ( CMAKE_EXPORT_COMPILE_COMMANDS ON )
+
 # Source
 set ( SOURCE_ONE_WEEKEND
   src/InOneWeekend/main.cc
