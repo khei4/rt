@@ -1,10 +1,11 @@
 # raytracing
 
 
-## build
+## build and run
 ```sh
 cmake -Bbuild
 cmake --build build
+./build/inOneWeekend
 ```
 
 ## test 
