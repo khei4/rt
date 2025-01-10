@@ -1,4 +1,5 @@
 #include <iostream>
+#include <unistd.h>
 using namespace std;
 
 
@@ -9,6 +10,8 @@ int main() {
 
     cout << "P3\n" << image_width << ' ' << image_height << "\n255\n";
     for (int j = image_height-1; 0 <= j; --j ) {
+        cerr << "\rScanlines remaining: " << j << ' ' << flush;
+        sleep(1);
         for (int i= 0;i < image_width; ++i) {
             auto r  = double(i)  / (image_width-1);
             auto g = double(j) / (image_height-1);
